@@ -3,134 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harsh Patel - Logo Designer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Harsh Patel | Logo Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      background: linear-gradient(to right, #f0f2f5, #e2e6ea);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #111, #333);
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 50px 20px;
-    }
-
-    .container {
-      background-color: #1e1e2f;
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 700px;
-      width: 100%;
-      box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+      padding: 60px 20px;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-
-    h1 {
-      font-size: 2.8rem;
-      color: #00ffff;
+    header h1 {
+      font-size: 2.5rem;
       margin-bottom: 10px;
     }
-
-    h2 {
-      font-size: 1.2rem;
-      color: #aaa;
-      margin-bottom: 30px;
+    header p {
+      font-size: 1rem;
     }
-
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #111;
+    }
+    p, li {
+      font-size: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    ul li {
+      margin: 10px;
+      background: #fff;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 0.95rem;
+    }
     .btn {
       display: inline-block;
-      margin: 12px 15px;
-      padding: 14px 28px;
-      background-color: #00ffff;
-      color: #000;
+      padding: 12px 25px;
+      margin-top: 15px;
+      background: #111;
+      color: #fff;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
-      transition: transform 0.3s ease;
+      border-radius: 6px;
+      transition: background 0.3s, transform 0.3s;
     }
-
     .btn:hover {
-      transform: translateY(-4px);
-      background-color: #00cccc;
+      background: #444;
+      transform: scale(1.05);
     }
-
-    .skills {
-      margin-top: 40px;
-      text-align: left;
+    .contact {
+      background: #f0f0f0;
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
-    .skills h3 {
-      font-size: 1.5rem;
-      color: #00ffff;
-      margin-bottom: 15px;
-    }
-
-    .skills ul {
-      list-style: none;
-      line-height: 2;
-      padding-left: 10px;
-    }
-
-    .skills li::before {
-      content: "✔";
-      color: #00ffff;
-      margin-right: 10px;
-    }
-
     footer {
-      margin-top: 50px;
-      color: #888;
-      font-size: 0.9rem;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
 
+    /* Mobile Responsive */
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
+      header h1 {
+        font-size: 1.8rem;
       }
-
+      header p {
+        font-size: 0.95rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
       .btn {
-        display: block;
         width: 100%;
-        margin: 10px auto;
+        max-width: 280px;
       }
-
-      .container {
-        padding: 30px 20px;
+      ul li {
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 300px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Harsh Patel</h1>
-    <h2>Creative & Professional Logo Designer</h2>
+    <p>Creative Logo Designer – Modern | Minimal | Unique</p>
+  </header>
 
-    <a class="btn" href="https://drive.google.com/drive/folders/1wt3nH4EjegyZxkJCS2BUbVF8VQdLjYUz" target="_blank">📁 View My Portfolio</a>
-    <a class="btn" href="mailto:harshpateln321@gmail.com">✉️ Contact Me</a>
-
-    <div class="skills">
-      <h3>🛠 My Skills</h3>
-      <ul>
-        <li>Logo Design (Modern, Minimal, 3D)</li>
-        <li>Adobe Illustrator & Photoshop</li>
-        <li>Brand Identity Creation</li>
-        <li>Social Media Design</li>
-        <li>Creative Typography</li>
-        <li>Fast Delivery & Revisions</li>
-      </ul>
+  <section>
+    <h2>Portfolio</h2>
+    <p style="text-align: center;">Explore my logo design work on Google Drive.</p>
+    <div style="text-align: center;">
+      <a class="btn" href="https://drive.google.com/drive/folders/1wt3nH4EjegyZxkJCS2BUbVF8VQdLjYUz" target="_blank">View Portfolio</a>
     </div>
-  </div>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <ul>
+      <li>✔ Custom Logo Design</li>
+      <li>✔ Brand Identity Kit</li>
+      <li>✔ Social Media Kit</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Want to work together or have questions? Feel free to email me:</p>
+    <p><strong>📧 harshpateln321@gmail.com</strong></p>
+  </section>
 
   <footer>
-    © 2025 Harsh Patel | Designed & Hosted on GitHub Pages
+    <p>&copy; 2025 Harsh Patel. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
